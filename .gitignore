@@ -6,4 +6,5 @@
 !/backend/config/
 !/backend/controllers/
 !/backend/middlewares/
+!.gitignore
 
