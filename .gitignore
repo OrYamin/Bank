@@ -2,5 +2,7 @@
 *
 
 ## Except
-##!/backend/bin/
-
+!/backend/bin/
+!/backend/config/
+!/backend/controllers/
+!/backend/middlewares/
