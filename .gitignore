@@ -2,7 +2,5 @@
 *
 
 ## Except
-!*.js
-!*.css
-!*.html
-!.gitignore
+!/backend/bin/
+
