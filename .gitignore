@@ -1,0 +1,9 @@
+## Ignore everything...
+*
+
+## Except
+!*.js
+!*.css
+!*.html
+!.gitignore
+
