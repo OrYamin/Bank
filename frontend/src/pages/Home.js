@@ -5,7 +5,7 @@ function Home() {
 
     // Fetch data from the backend API
     useEffect(() => {
-        fetch('/api/accounts') // Assumes the backend runs on the same server or uses a proxy
+        fetch('/accounts') // Assumes the backend runs on the same server or uses a proxy
             .then(response => response.json())
             .then(data => setAccounts(data))
             .catch(error => console.error('Error fetching accounts:', error));
