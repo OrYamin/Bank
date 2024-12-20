@@ -1,9 +1,14 @@
 const express = require('express');
 const router = express.Router();
-const accountControllers = require(`../controllers/accountController`);
+const verifyToken = require('../middlewares/verifyToken');
+const accountControllers = require('../controllers/accountControllers');
 
-// Example GET endpoint
-router.get('/', accountControllers.getAccount);
-router.get('/:id', accountControllers.getAccount);
+router.use(verifyToken);
+
+router
+    .get("/balance", accountControllers.getBalance)
+    .get("/transactions", accountControllers.getTransactionHistory)
+    .get("/info", accountControllers.getAccountInfo)
+    .put("/info", accountControllers.changeAccountInfo);
 
 module.exports = router;
